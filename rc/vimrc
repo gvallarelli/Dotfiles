@@ -1,0 +1,49 @@
+" Use Vim settings, rather than Vi settings.
+set nocompatible
+
+
+" Editor general settings
+" ----------------------------------------------------------------------------
+set ruler                       " Show cursor position.
+set cursorline                  " Highlight line with cursor.
+set number                      " Show line numbers.
+set showcmd                     " Display incomplete commands.
+set showmode                    " Show the mode you're in.
+set backspace=indent,eol,start  " Intuitive backspacing.
+set wildmenu                    " Enhanced command line completion.
+set wildmode=list:longest       " Complete filenames like a shell.
+set visualbell                  " Visual feedback, no beeping.
+colorscheme jellybeans          " Set colorscheme.
+
+
+" Tab settings
+" ----------------------------------------------------------------------------
+set tabstop=2                    " Global tab width.
+set shiftwidth=2                 " And again, related.
+set expandtab                    " Use spaces instead of tabsearch settings.
+
+
+" ----------------------------------------------------------------------------
+set hlsearch                    " Highlight search terms.
+set incsearch                   " Show search matches as you type.
+set ignorecase                  " Ignore case when searching.
+set smartcase                   " Ignore case if search pattern is all
+
+
+" Buffer settings
+" ----------------------------------------------------------------------------
+set hidden                      " Hide buffers instead of closing them.
+
+
+" File settigs
+" ----------------------------------------------------------------------------
+syntax enable                   " Turn on syntax highlighting.
+filetype plugin indent on       " Enable filetype detection.
+set noswapfile                  " Disable backups.
+set nowritebackup               " Disable backups.
+
+
+" Mappings
+" ----------------------------------------------------------------------------
+
+inoremap jj <ESC>               " Remapping jj to ESC.
